@@ -14,6 +14,7 @@ Group:		System/Fonts/Type1
 BuildArch:	noarch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
+BuildRequires:	mkfontdir
 Requires(post): fontconfig
 Requires(postun): fontconfig
 
