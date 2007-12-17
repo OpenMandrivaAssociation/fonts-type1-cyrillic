@@ -12,7 +12,6 @@ Source1:	oldslavic.tar.bz2
 License:	GPL+ and MIT
 Group:		System/Fonts/Type1
 BuildArch:	noarch
-BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
 BuildRequires:	mkfontdir
 Requires(post): fontconfig
