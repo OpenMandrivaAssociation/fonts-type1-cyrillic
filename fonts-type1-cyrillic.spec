@@ -1,7 +1,7 @@
 Summary:	Cyrillic Type1 fonts
 Name:		fonts-type1-cyrillic
 Version:	1.1
-Release:	%mkrel 10
+Release:	%mkrel 11
 
 # The "TopTeam" bulgarian company kindly donated good quality
 # PS Type1 cyrillic font "Teams" to X community.
@@ -15,8 +15,6 @@ BuildArch:	noarch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
 BuildRequires:	mkfontdir
-Requires(post): fontconfig
-Requires(postun): fontconfig
 
 %description
 Scalable fonts including common Cyrillic glyphs.
@@ -54,15 +52,8 @@ ln -s ../../..%_datadir/fonts/type1/cyrillic \
 %clean
 rm -fr %buildroot
 
-%postun
-# 0 means a real uninstall
-if [ "$1" = "0" ]; then
-   [ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache
-fi
-
 %post
 touch %{_datadir}/fonts/type1
-[ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache
 
 %files
 %defattr(0644,root,root,0755)
