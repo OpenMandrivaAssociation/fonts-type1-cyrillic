@@ -1,7 +1,7 @@
 Summary:	Cyrillic Type1 fonts
 Name:		fonts-type1-cyrillic
 Version:	1.1
-Release:	%mkrel 11
+Release:	%mkrel 12
 
 # The "TopTeam" bulgarian company kindly donated good quality
 # PS Type1 cyrillic font "Teams" to X community.
