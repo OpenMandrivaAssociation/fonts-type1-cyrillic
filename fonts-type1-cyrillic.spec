@@ -1,7 +1,7 @@
 Summary:	Cyrillic Type1 fonts
 Name:		fonts-type1-cyrillic
 Version:	1.1
-Release:	23
+Release:	24
 License:	GPLv2 and MIT
 Group:		System/Fonts/Type1
 # The "TopTeam" bulgarian company kindly donated good quality
